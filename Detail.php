@@ -16,8 +16,8 @@ class Detail extends Controller
     }
     public function addCollect()
     {
+        $book=Book::where('bookID',input('get.bookID'))->find();
         if(empty(session('email'))){
-            $this->error('请先登录!','login/login');
         }
 
         $bookID=input('post.bookID');
