@@ -17,7 +17,7 @@ class Detail extends Controller
     public function addCollect()
     {
         if(empty(session('email'))){
-            $this->error('请先登录呢亲!','login/login');
+            $this->error('请先登录呢亲111!','login/login');
         }
 
         $bookID=input('post.bookID');
